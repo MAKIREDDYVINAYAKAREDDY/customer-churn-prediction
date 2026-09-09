@@ -51,8 +51,8 @@ SHAP Explainability
 Streamlit Dashboard
         ↓
 Docker Deployment
-| Model | Purpose |
-|---|---|
+
+Models 
 | Logistic Regression | Baseline model |
 | Random Forest | Ensemble learning |
 | Gradient Boosting | Boosting model |
@@ -78,47 +78,6 @@ The Streamlit dashboard allows users to enter customer information and receive:
 - Risk classification
 - Decision threshold
 - SHAP-based explanation
-```
-```customer-churn-prediction/
-│
-├── app/
-│   └── streamlit_app.py
-│
-├── data/
-│   └── raw/
-│
-├── images/
-│   └── dashboard.png
-│
-├── models/
-│   ├── final_model_config.joblib
-│   ├── gradient_boosting.joblib
-│   ├── logistic_regression.joblib
-│   ├── preprocessor.joblib
-│   ├── random_forest.joblib
-│   ├── xgboost.joblib
-│   └── xgboost_tuned.joblib
-│
-├── reports/
-│
-├── src/
-│   ├── 01_data_inspection.py
-│   ├── 02_preprocessing.py
-│   ├── 03_eda.py
-│   ├── 04_baseline_model.py
-│   ├── 05_random_forest.py
-│   ├── 06_gradient_boosting.py
-│   ├── 07_xgboost.py
-│   ├── 08_model_comparison.py
-│   ├── 09_final_model_selection.py
-│   └── 10_shap_explainability.py
-│
-├── .dockerignore
-├── .gitignore
-├── Dockerfile
-├── README.md
-└── requirements.txt
-```
 🛠️ Tech Stack
 - Python
 - Pandas
@@ -130,6 +89,7 @@ The Streamlit dashboard allows users to enter customer information and receive:
 - Seaborn
 - Streamlit
 - Docker
+
 📌 Dataset
 IBM Telco Customer Churn dataset.
 The dataset contains customer demographics, subscribed services, contract information, billing information, and churn status.
@@ -137,7 +97,7 @@ The dataset contains customer demographics, subscribed services, contract inform
 Customer churn prediction can help organizations identify customers at higher risk of leaving and support targeted retention strategies.
 The model's probability threshold can be adjusted depending on the business cost of false positives and false negatives.
 ## 📸 Application Screenshots
-
+```
 ### 1. Dashboard
 
 The interactive dashboard allows users to enter customer demographics, services, contract, and billing information.
