@@ -136,3 +136,23 @@ The dataset contains customer demographics, subscribed services, contract inform
 🎯 Business Objective
 Customer churn prediction can help organizations identify customers at higher risk of leaving and support targeted retention strategies.
 The model's probability threshold can be adjusted depending on the business cost of false positives and false negatives.
+## 📸 Application Screenshots
+
+### 1. Dashboard
+
+The interactive dashboard allows users to enter customer demographics, services, contract, and billing information.
+
+![Customer Churn Dashboard](images/dashboard.png)
+
+### 2. Prediction
+
+The prediction view displays the customer's churn probability, decision threshold, prediction result, and overall risk level.
+
+![Customer Churn Prediction](images/prediction.png)
+
+### 3. Analysis
+
+The analysis view provides SHAP-based explanations showing which features increase or decrease the customer's churn risk.
+
+![Customer Churn Analysis](images/analysis.png)
+
